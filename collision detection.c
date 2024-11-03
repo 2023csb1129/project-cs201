@@ -1,5 +1,4 @@
 
-
 //collision detection code
 
 #include <stdio.h>
@@ -72,7 +71,7 @@ TreeNode* initNode(float x,float y,float w,float h) {
 int isCollision(Bubble* b1,Bubble* b2){
     // Calculate distance between two bubbles
     
-    float dist=sqrt((b1->posX-b2->posX)(b1->posX-b2->posX)+(b1->posY-b2->posY)(b1->posY-b2->posY));
+    float dist=sqrt((b1->posX-b2->posX)*(b1->posX-b2->posX)+(b1->posY-b2->posY)*(b1->posY-b2->posY));
     return dist<=(b1->size+b2->size); 
     // if they overlap, we got a collision
     
@@ -87,7 +86,7 @@ void loadBubblesFromFile(Bubble** bubbleArray,int* bubbleCount,const char* fileP
         exit(EXIT_FAILURE);
     }
     
-    bubbleArray=(Bubble)malloc(MAX_BUB_COUNT*sizeof(Bubble)); 
+    *bubbleArray=(Bubble*)malloc(MAX_BUB_COUNT*sizeof(Bubble)); 
     // Allocate memory for bubbles
     
     int i=0;
