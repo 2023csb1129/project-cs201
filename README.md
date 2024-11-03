@@ -79,6 +79,12 @@ Score: 0
 
 Final Score: 0
 
+
+
+
 To run the code a C compiler should be installed in the computer like mingw which I installed in my windows and I used vs code to run the program.
 To compille we use-gcc problem1.c -o problem1.exe and we run the executable file by-problem1.exe  we can also have coderunner installed in vscode so by clicking the run button we get the output.
+
+
+FINAL PROJECT REPORT:
 [Report_pdf_Group_40.pdf](https://github.com/user-attachments/files/17608827/Report_pdf_Group_40.pdf)
